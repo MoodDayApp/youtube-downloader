@@ -100,7 +100,7 @@ class YouTubeDownloader
         $response = $this->client->post("https://www.youtube.com/youtubei/v1/player?key=" . $configData->getApiKey(), json_encode([
             "context" => [
                 "client" => [
-                    "clientName" => "ANDROID",
+                    "clientName" => "ANDROID_EMBEDDED_PLAYER",
                     "clientVersion" => "16.20",
                     "hl" => "en"
                 ]
